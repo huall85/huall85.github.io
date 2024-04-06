@@ -66,6 +66,13 @@ const Projects = memo(function Projects() {
                 ) : <span className="font-medium leading-tight text-primary group/link group-hover:text-link">{item.title}</span>}
               </h3>
               <p className="mt-2 text-sm leading-normal">{item.description}</p>
+              <ul className="mt-2 flex flex-wrap">
+                {item.technologies.map(item => (
+                  <li key={item} className="mr-1.5 mt-2">
+                    <div className="rounded bg-link px-3 py-1 text-sm leading-5 text-white">{item}</div>
+                  </li>
+                ))}
+              </ul>
             </div>
             <Image src={item.img} alt={item.title} className="rounded transition sm:order-1 sm:col-span-2 sm:translate-y-1" />
           </div>
