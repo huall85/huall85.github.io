@@ -3,7 +3,8 @@ import Image, { StaticImageData } from "next/image";
 import chatPic from "../../public/chat.jpg";
 import comparePic from "../../public/compare.jpg";
 import enassPic from "../../public/enass.jpg";
-import wxapp from "../../public/wxapp.jpg";
+import wxappPic from "../../public/wxapp.jpg";
+import etpssPic from "../../public/etpss.png";
 
 type ProjectType = {
   img: StaticImageData;
@@ -30,8 +31,8 @@ const projects: ProjectType[] = [
   {
     img: comparePic,
     title: "成套装置大数据平台",
-    description: "实现了从数据录入到生成报告的全流程业务，支持上传装置结构图并在图上标注兴趣点和绘制回路。",
-    technologies: ["React", "Ant Design"],
+    description: "实现了从数据录入到生成报告的全流程业务，支持上传装置结构图并在图上标注兴趣点和绘制回路，支持显示设备的三维模型。",
+    technologies: ["React", "Ant Design", "Three.js"],
   },
   {
     img: enassPic,
@@ -41,10 +42,17 @@ const projects: ProjectType[] = [
     technologies: ["Vue", "Element UI"],
   },
   {
-    img: wxapp,
+    img: wxappPic,
     title: "智能制造小程序",
     description: "网站配套的小程序，实现了大部分网页应用支持的操作。",
     technologies: ["uni-app"],
+  },
+  {
+    img: etpssPic,
+    title: "云端业务工作室",
+    url: "https://etpss.casicloud.com/home/index.html",
+    description: "包含供应链管理、营销管理、物流服务等业务，是国家首个工业互联网公共服务平台--航天云网的重要组成部分。",
+    technologies: ["JSP", "jQuery", "Bootstrap"],
   },
 ];
 

@@ -58,7 +58,7 @@ export default function Home() {
           <main id="content" className="pt-24 lg:w-1/2 lg:py-24">
             <Section
               id="about"
-              title="关于"
+              title="简介"
             >
               <>
                 <p className="mb-4 text-secondary">

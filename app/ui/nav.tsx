@@ -9,7 +9,7 @@ interface NavProps {
 const links: LinkNode[] = [
   {
     id: "about",
-    title: "关于"
+    title: "简介"
   },
   {
     id: "experience",
